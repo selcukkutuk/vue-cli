@@ -1,0 +1,229 @@
+{
+  "components": {
+    "folder-explorer": {
+      "toolbar": {
+        "tooltips": {
+          "parent-folder": "Open parent folder",
+          "edit-path": "Edit path",
+          "favorite": "Toggle favorite",
+          "favorite-folders": "Favorite folders",
+          "refresh": "Refresh"
+        },
+        "placeholder": "Enter the full path to a folder",
+        "empty": "No favorite folders yet."
+      }
+    },
+    "list-item-info": {
+      "more-info": "More Info"
+    },
+    "logger-view": {
+      "title": "Logs",
+      "empty": "Not logs yet",
+      "buttons": {
+        "clear": "Clear logs",
+        "scroll": "Scroll to bottom",
+        "close": "Close"
+      }
+    },
+    "progress-screen": {
+      "close": "Close"
+    },
+    "project-nav": {
+      "tooltips": {
+        "plugins": "Plugins",
+        "configuration": "Configuration",
+        "tasks": "Tasks"
+      }
+    },
+    "project-select-list": {
+      "empty": "No existing projects"
+    },
+    "project-select-list-item": {
+      "tooltips": {
+        "favorite": "Toggle favorite",
+        "delete": "Delete"
+      }
+    },
+    "project-plugin-item": {
+      "version": "version",
+      "latest": "latest",
+      "official": "Official",
+      "installed": "Installed",
+      "actions": {
+        "update": "Update {target}"
+      }
+    },
+    "prompts-list": {
+      "empty": "No configuration"
+    },
+    "status-bar": {
+      "project": {
+        "tooltip": "Current project<br><i>Click to toggle Project Manager</i>",
+        "empty": "No project"
+      },
+      "path": {
+        "tooltip": "Current Working Folder"
+      },
+      "log": {
+        "tooltip": "Logs<br><i>Click to toggle Vue CLI logs</i>",
+        "empty": "No logs yet"
+      }
+    }
+  },
+  "mixins": {
+    "progress": {
+      "creating": "Creating project...",
+      "git-init": "Initializing git repository...",
+      "plugins-install":
+        "Installing Vue CLI plugins. This might take a while...",
+      "invoking-generators": "Invoking generators...",
+      "deps-install": "Installing additional dependencies...",
+      "completion-hooks": "Running completion hooks...",
+      "fetch-remote-preset": "Fetching remote preset...",
+      "done": "Successfully created project",
+      "plugin-install": "Installing {arg0}...",
+      "plugin-uninstall": "Uninstalling {arg0}...",
+      "plugin-invoke": "Invoking {arg0}...",
+      "plugin-update": "Updating {arg0}..."
+    }
+  },
+  "views": {
+    "project-select": {
+      "title": "Vue Proje Yönetici",
+      "tabs": {
+        "projects": "Projeler",
+        "create": "Oluştur",
+        "import": "İçe Aktar"
+      },
+      "buttons": {
+        "create": "Yeni bir proje oluştur",
+        "import": "Import this folder"
+      }
+    },
+    "project-create": {
+      "title": "Yeni bir proje oluştur",
+      "tabs": {
+        "details": {
+          "title": "Detaylar",
+          "form": {
+            "folder": {
+              "label": "Proje Klasörü",
+              "placeholder": "benim-uygulamam",
+              "tooltip": "Ana klasörü değiştir",
+              "action": "Bu klasörü seç"
+            },
+            "manager": {
+              "label": "Paket yöneticisi",
+              "default": "Varsayılan"
+            },
+            "options": {
+              "label": "Ek seçenekler",
+              "description": "Hedef klasör varsa üzerine yaz"
+            }
+          },
+          "buttons": {
+            "cancel": "İptal",
+            "next": "Sonraki"
+          },
+          "modal": {
+            "title": "Proje oluşturmayı iptal et ve sıfırla",
+            "body": "Proje oluşturmayı sıfırlamak istediğinizden emin misiniz?",
+            "buttons": {
+              "back": "Geri dön",
+              "clear": "Projeyi temizle"
+            }
+          }
+        },
+        "presets": {
+          "title": "Proje Şablonu",
+          "description":
+            "Proje şablonu, eklenti ve yapılandırmaların birleşimidir. Özellikleri seçtikten sonra isteğe bağlı olarak bir proje şablonu olarak kaydedebilir, böylece her şeyi yeniden yapılandırmak zorunda kalmadan gelecekteki projeler için yeniden kullanabilirsiniz.",
+          "select": "Bir proje şablonu seçin",
+          "buttons": {
+            "previous": "Önceki",
+            "next": "Sonraki",
+            "create": "Projeyi Oluştur"
+          },
+          "modal": {
+            "title": "Configure Remote preset",
+            "body": "Yakında kullanılabilir olacaktır..."
+          }
+        },
+        "features": {
+          "title": "Özellikler",
+          "description":
+            "You will be able to add features after the project is created by installing plugins.",
+          "enable": "Enable features",
+          "buttons": {
+            "previous": "Önceki",
+            "next": "Sonraki",
+            "create": "Projeyi oluştur"
+          }
+        },
+        "configuration": {
+          "title": "Yapılandırma",
+          "buttons": {
+            "previous": "Önceki",
+            "create": "Projeyi oluştur"
+          },
+          "modal": {
+            "title": "Yeni bir proje şablonu olarak kaydet",
+            "body": {
+              "title": "Proje şablonu adı",
+              "subtitle":
+                "Özellikleri ve yapılandırmayı yeni bir proje şablonuna kaydet"
+            },
+            "buttons": {
+              "cancel": "İptal",
+              "continue": "Kaydetmeden devam et",
+              "create": "Yeni bir proje şablonu oluştur"
+            }
+          }
+        }
+      }
+    },
+    "project-plugins": {
+      "title": "Project plugins",
+      "button": "Add plugin",
+      "heading": "Installed plugins"
+    },
+    "project-plugins-add": {
+      "title": "Add a plugin",
+      "plugin": "plugin",
+      "tabs": {
+        "search": {
+          "label": "Search",
+          "search-input": "Search a plugin",
+          "not-found": "No results found",
+          "buttons": {
+            "cancel": "Cancel",
+            "install": "Install {target}"
+          }
+        },
+        "configuration": {
+          "label": "Configuration",
+          "heading": "Installation of {target}",
+          "buttons": {
+            "cancel": "Cancel",
+            "finish": "Finish installation"
+          }
+        }
+      },
+      "modal": {
+        "title": "Uninstall {target}?",
+        "body": "Do you want to uninstall the {target} plugin?",
+        "buttons": {
+          "back": "Go back",
+          "cancel": "Cancel without uninstalling",
+          "uninstall": "Uninstall"
+        }
+      }
+    },
+    "project-configuration": {
+      "title": "Project configuration"
+    },
+    "project-tasks": {
+      "title": "Project tasks"
+    }
+  }
+}
